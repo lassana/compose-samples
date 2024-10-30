@@ -19,6 +19,7 @@ package com.example.jetnews
 import android.app.Application
 import com.example.jetnews.data.AppContainer
 import com.example.jetnews.data.AppContainerImpl
+import io.cobrowse.CobrowseIO
 
 class JetnewsApplication : Application() {
     companion object {
@@ -31,5 +32,10 @@ class JetnewsApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         container = AppContainerImpl(this)
+
+        with(CobrowseIO.instance()) {
+            license("trial")
+            start()
+        }
     }
 }

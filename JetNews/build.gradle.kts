@@ -23,4 +23,14 @@ plugins {
     alias(libs.plugins.compose) apply false
 }
 
+buildscript {
+    repositories {
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath("io.cobrowse:cobrowse-sdk-android-gradle-plugin:2.37.1")
+    }
+}
+
 apply("${project.rootDir}/buildscripts/toml-updater-config.gradle")

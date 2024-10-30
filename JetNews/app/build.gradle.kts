@@ -19,6 +19,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.compose)
 }
+apply(plugin = "io.cobrowse.cobrowse-sdk-android-gradle-plugin")
 
 android {
     compileSdk = libs.versions.compileSdk.get().toInt()
@@ -118,6 +119,9 @@ dependencies {
     implementation(libs.androidx.lifecycle.runtime.compose)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.window)
+
+    implementation("io.cobrowse:cobrowse-sdk-android:2.37.1")
+    implementation("io.cobrowse:cobrowse-sdk-android-compose-ui:2.37.1")
 
     androidTestImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.core)
