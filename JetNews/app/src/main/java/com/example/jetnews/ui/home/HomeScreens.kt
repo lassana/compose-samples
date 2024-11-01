@@ -90,6 +90,7 @@ import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.testTag
 import androidx.compose.ui.text.input.ImeAction
@@ -618,6 +619,7 @@ private fun HomeSearch(
             }
             .semantics {
                 testTag = "A search field"
+                contentDescription = "Another search"
             },
         singleLine = true,
         // keyboardOptions change the newline key to a search key on the soft keyboard

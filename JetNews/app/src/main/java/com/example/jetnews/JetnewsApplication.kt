@@ -35,6 +35,7 @@ class JetnewsApplication : Application() {
 
         with(CobrowseIO.instance()) {
             license("trial")
+            redactedViews(arrayOf("[testTag=\"A search field\"]"))
             start()
         }
     }
