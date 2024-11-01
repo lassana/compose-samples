@@ -29,7 +29,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath("io.cobrowse:cobrowse-sdk-android-gradle-plugin:2.37.1")
+        classpath("io.cobrowse:cobrowse-sdk-android-gradle-plugin:2.37.3")
     }
 }
 

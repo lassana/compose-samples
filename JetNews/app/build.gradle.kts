@@ -120,8 +120,8 @@ dependencies {
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.window)
 
-    implementation("io.cobrowse:cobrowse-sdk-android:2.37.1")
-    implementation("io.cobrowse:cobrowse-sdk-android-compose-ui:2.37.1")
+    implementation("io.cobrowse:cobrowse-sdk-android:2.37.3")
+    implementation("io.cobrowse:cobrowse-sdk-android-compose-ui:2.37.3")
 
     androidTestImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.core)
